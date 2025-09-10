@@ -20,15 +20,8 @@ const Navbar = () => {
           {/* Desktop Nav Links */}
           <div className="hidden md:flex items-center gap-6 relative">
             {/* Services Dropdown */}
-            <div className="relative">
-              <button
-                className="flex items-center gap-1 hover:text-gray-300 nav-link cursor-pointer"
-                onClick={() => setOpenMenu(!openMenu)}
-              >
-                Services <ChevronDown size={16} />
-              </button>
-            </div>
-
+           
+            <Dropdown></Dropdown>
             <button className="hover:text-gray-300 nav-link cursor-pointer">Process</button>
             <button className="hover:text-gray-300 nav-link cursor-pointer">Blog</button>
            <SupportDropdown></SupportDropdown>

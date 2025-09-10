@@ -1,9 +1,13 @@
-import Navbar from './Components/Navbar/Navbar'
+import HeroSection from "./Components/HeroSection";
+import Navbar from "./Components/Navbar/Navbar";
 
 const App = () => {
   return (
-   <Navbar></Navbar>
-  )
-}
+    <>
+      <Navbar></Navbar>
+      <HeroSection></HeroSection>
+    </>
+  );
+};
 
-export default App
+export default App;

@@ -20,7 +20,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
             <div className="flex justify-between items-center mb-8">
               <span className="font-semibold text-lg">Menu</span>
               <button onClick={onClose} className="p-1">
-                <X size={24} />
+                <X size={24} className="cursor-pointer"/>
               </button>
             </div>
 
@@ -29,7 +29,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
               {/* Services */}
               <div>
                 <button
-                  className="flex items-center justify-between w-full text-left py-2 text-lg hover:text-gray-300"
+                  className="flex items-center justify-between w-full text-left py-2 text-lg hover:text-gray-300 cursor-pointer"
                   onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
                 >
                   Services
@@ -52,17 +52,25 @@ const MobileMenu = ({ isOpen, onClose }) => {
                         <div>
                           <h6 className="text-sm text-gray-400 uppercase tracking-wide mb-2">Web Solutions</h6>
                           <div className="space-y-2">
-                            <a href="#" className="block text-sm hover:text-gray-300">Website Design</a>
-                            <a href="#" className="block text-sm hover:text-gray-300">Mobile Apps</a>
-                            <a href="#" className="block text-sm hover:text-gray-300">AI & Automation</a>
+                            <a href="#" className="block text-sm hover:text-gray-300 cursor-pointer ">Website Design</a>
+                            <a href="#" className="block text-sm hover:text-gray-300 cursor-pointer">Mobile Apps</a>
+                            <a href="#" className="block text-sm hover:text-gray-300 cursor-pointer">AI & Automation</a>
                           </div>
                         </div>
                         <div>
                           <h6 className="text-sm text-gray-400 uppercase tracking-wide mb-2">Cloud & DevOps</h6>
                           <div className="space-y-2">
-                            <a href="#" className="block text-sm hover:text-gray-300">Cloud Migration</a>
-                            <a href="#" className="block text-sm hover:text-gray-300">DevOps Services</a>
-                            <a href="#" className="block text-sm hover:text-gray-300">Managed IT</a>
+                            <a href="#" className="block text-sm hover:text-gray-300 cursor-pointer">Cloud Migration</a>
+                            <a href="#" className="block text-sm hover:text-gray-300 cursor-pointer">DevOps Services</a>
+                            <a href="#" className="block text-sm hover:text-gray-300 cursor-pointer">Managed IT</a>
+                          </div>
+                        </div>
+                         <div>
+                          <h6 className="text-sm text-gray-400 uppercase tracking-wide mb-2">Process</h6>
+                          <div className="space-y-2">
+                            <a href="#" className="block text-sm hover:text-gray-300 cursor-pointer">How it Works</a>
+                            <a href="#" className="block text-sm hover:text-gray-300 cursor-pointer">FAQ</a>
+                            <a href="#" className="block text-sm hover:text-gray-300 cursor-pointer">Contact Us</a>
                           </div>
                         </div>
                       </div>
@@ -72,19 +80,19 @@ const MobileMenu = ({ isOpen, onClose }) => {
               </div>
 
               {/* Process */}
-              <button className="block w-full text-left py-2 text-lg hover:text-gray-300">
+              <button className="block w-full text-left py-2 text-lg hover:text-gray-300 cursor-pointer">
                 Process
               </button>
 
               {/* Blog */}
-              <button className="block w-full text-left py-2 text-lg hover:text-gray-300">
+              <button className="block w-full text-left py-2 text-lg hover:text-gray-300 cursor-pointer">
                 Blog
               </button>
 
               {/* Support */}
               <div>
                 <button
-                  className="flex items-center justify-between w-full text-left py-2 text-lg hover:text-gray-300"
+                  className="flex items-center justify-between w-full text-left py-2 text-lg hover:text-gray-300 cursor-pointer"
                   onClick={() => setMobileSupportOpen(!mobileSupportOpen)}
                 >
                   Support
@@ -104,8 +112,8 @@ const MobileMenu = ({ isOpen, onClose }) => {
                       className="overflow-hidden"
                     >
                       <div className="pl-4 mt-3 space-y-2 border-l border-gray-700">
-                        <a href="#" className="block text-sm hover:text-gray-300">Help Center</a>
-                        <a href="#" className="block text-sm hover:text-gray-300">Contact Us</a>
+                        <a href="#" className="block text-sm hover:text-gray-300 cursor-pointer">Help Center</a>
+                        <a href="#" className="block text-sm hover:text-gray-300 cursor-pointer">Contact Us</a>
                       </div>
                     </motion.div>
                   )}
@@ -114,7 +122,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
 
               {/* Mobile CTA */}
               <div className="pt-6 border-t border-gray-700">
-                <button className="w-full bg-orange-600 hover:bg-orange-800 px-4 py-3 rounded text-white font-semibold">
+                <button className="w-full bg-orange-600 hover:bg-orange-800 cursor-pointer px-4 py-3 rounded text-white font-semibold">
                   Get Quote
                 </button>
               </div>
