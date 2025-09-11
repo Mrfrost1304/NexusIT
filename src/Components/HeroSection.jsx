@@ -1,4 +1,6 @@
 import image2 from '../assets/Images/image2.avif'
+import image1 from '../assets/Images/image1.avif'
+import image4 from '../assets/Images/image4.avif'
 const HeroSection = () => {
   return (
     <section className="bg-black text-white py-16">
@@ -34,13 +36,13 @@ const HeroSection = () => {
           />
           {/* Image 2 - overlay */}
           <img
-            src="/images/img2.jpg"
+            src={image1}
             alt="Overlay"
             className="absolute top-20 right-0 w-52 h-32 object-cover rounded-lg shadow-lg"
           />
           {/* Image 3 - bottom */}
           <img
-            src="/images/img3.jpg"
+            src={image4}
             alt="Bottom"
             className="absolute bottom-0 left-20 w-60 h-36 object-cover rounded-lg shadow-lg"
           />

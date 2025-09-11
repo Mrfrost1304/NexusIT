@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { ChevronDown, Menu, X } from "lucide-react";
+import { Menu} from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import Dropdown, { SupportDropdown } from "./Dropdown";
+import ServiceDropdown, { SupportDropdown } from "./Dropdown";
 import MobileMenu from "./MobileView";
+import AnimationDropdown from "./AnimationDropdown";
 const Navbar = () => {
-  const [openMenu, setOpenMenu] = useState(false);
+  
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -21,10 +22,14 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-6 relative">
             {/* Services Dropdown */}
            
-            <Dropdown></Dropdown>
-            <button className="hover:text-gray-300 nav-link cursor-pointer">Process</button>
-            <button className="hover:text-gray-300 nav-link cursor-pointer">Blog</button>
+           <AnimationDropdown label="Services" menuClassName="left-1/2 -translate-x-125  w-[1260px] p-12 rounded-lg">
+           <ServiceDropdown></ServiceDropdown>
+           </AnimationDropdown>
+            <button className="text-white hover:text-gray-300 nav-link cursor-pointer">Process</button>
+            <button className="text-white hover:text-gray-300 nav-link cursor-pointer">Blog</button>
+           <AnimationDropdown label="Support" menuClassName="right-0 w-44">
            <SupportDropdown></SupportDropdown>
+           </AnimationDropdown>
           </div>
 
           {/* Mobile & Desktop CTA + Hamburger */}
@@ -45,8 +50,7 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Desktop Services Dropdown */}
-      {openMenu && <Dropdown isOpen={openMenu} />}
+ 
 
       {/* Mobile Menu */}
       <MobileMenu 
