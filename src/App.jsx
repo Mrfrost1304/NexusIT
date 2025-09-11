@@ -1,4 +1,7 @@
+import EmailSuscribeSection from "./Components/EmailSuscribeSection";
+import Footer from "./Components/Footer";
 import HeroSection from "./Components/HeroSection";
+import MessageSection from "./Components/MessageSection";
 import Navbar from "./Components/Navbar/Navbar";
 
 const App = () => {
@@ -6,7 +9,9 @@ const App = () => {
     <>
       <Navbar></Navbar>
       <HeroSection></HeroSection>
-      <HeroSection></HeroSection>
+      <EmailSuscribeSection></EmailSuscribeSection>
+      <MessageSection></MessageSection>
+      <Footer></Footer>
     </>
   );
 };

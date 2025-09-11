@@ -38,7 +38,7 @@ const AnimationDropdown = ({ label, children, menuClassName = "" }) => {
       {/* Trigger button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-1 px-3 py-2 text-sm font-semibold text-white hover:text-gray-300 nav-link"
+        className="flex items-center gap-1 px-3 py-2 text-sm font-semibold text-white hover:text-gray-300 nav-link cursor-pointer"
       >
         {label}
         <svg
